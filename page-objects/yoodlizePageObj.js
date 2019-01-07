@@ -7,12 +7,30 @@ var yoodlizeCommands = {
       url: 'https://alpha.yoodlize.com/',
       commands: [yoodlizeCommands],
       elements: {
+          //Home page
           logo: '[src="/images/logo/blueRaw.png"]',
           searchBar: '[placeholder="Search for an item"]',
           searchBtn: '[class="sc-esjQYD iIXhUv sc-ifAKCX kvYMhQ"]',
           browse: '[actionbuttonlarge="true"]',
 
-          //tools category
+          //Browse page
+          filters: '[class="fal fa-chevron-circle-up fa-lg"]',
+          toolsFilter: 'div:nth-child(6) > div.icheckbox_minimal-blue > ins',
+          toysFilter: 'div:nth-child(7) > div.icheckbox_minimal-blue > ins',
+          searchFilter: '[placeholder="Search"]',
+          cityFilter: '[placeholder="Enter your city"]',
+          startDateFilter: '[id="startDate"]',
+          endDateFilter: '[id="endDate"]',
+          july31Date: 'td.CalendarDay.CalendarDay_1.CalendarDay__defaultCursor.CalendarDay__defaultCursor_2.CalendarDay__default.CalendarDay__default_3.CalendarDay__blocked_minimum_nights.CalendarDay__blocked_minimum_nights_4.CalendarDay__selected_start.CalendarDay__selected_start_5.CalendarDay__selected.CalendarDay__selected_6',
+          august01Date: 'div > div:nth-child(3) > div > table > tbody > tr:nth-child(1) > td:nth-child(5)',
+          ratingsFilter: '[class="sc-bdVaJa eBoTiH"]',
+          minPriceFilter: '[name="priceMin"]',
+          maxPriceFilter: '[name="priceMax"]',
+          clearFiltersBtn: '[class="sc-esjQYD kDoEhs sc-ifAKCX opXhf"]',
+          applyFiltersBtn: '[class="sc-esjQYD bCvtjb sc-ifAKCX kvYMhQ"]',
+
+
+          //Tools category
           seeAllTools: {
             selector: '(//a[@href="/s?category=86"])[1]',
             locateStrategy: 'xpath'
@@ -21,7 +39,7 @@ var yoodlizeCommands = {
           previousToolBtn: 'div:nth-child(1) > div:nth-child(2) > div > div.nextArrow.sc-kPVwWT.bOZYnu',
           toolCardPickaxe: 'div[id="item-card-561"]',
           
-          //toys category
+          //Toys category
           seeAllToys: {
             selector: '(//a[@href="/s?category=87"])[1]',
             locateStrategy: 'xpath'
