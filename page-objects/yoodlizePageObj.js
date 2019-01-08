@@ -1,6 +1,6 @@
 var yoodlizeCommands = {
 
-    checkHomePg: function () {
+    checkHomePg() {
         this
             .assert.elementPresent('@logo')
             .assert.elementPresent('@searchBar')
@@ -14,7 +14,7 @@ var yoodlizeCommands = {
             .assert.elementPresent('@previousToysBtn')
             .assert.elementPresent('@seeAllSports')
             .assert.elementPresent('@nextSportsBtn')
-            .assert.elementPresent('@reviousSportsBtn')
+            .assert.elementPresent('@previousSportsBtn')
             .assert.elementPresent('@seeAllBusiness')
             .assert.elementPresent('@nextBusinessBtn')
             .assert.elementPresent('@previousBusinessBtn')
@@ -46,13 +46,15 @@ var yoodlizeCommands = {
         return this
     },
 
-    searchBar: function (searchInfo, url) {
+    searchBar(searchInfo, searchResult) {
         this
             .setValue('@searchBar', searchInfo)
             .click('@searchBtn')
-            .assert.urlEquals(url)
+            .expect.element('@searchResult').text.to.equal(searchResult).before(5000)
         return this
     },
+
+
 }
 
 
@@ -76,7 +78,8 @@ module.exports = {
         nextToolBtn: 'div:nth-child(1) > div:nth-child(2) > div > div.nextArrow.sc-kPVwWT.bUUAdh',
         previousToolBtn: 'div:nth-child(1) > div:nth-child(2) > div > div.nextArrow.sc-kPVwWT.bOZYnu',
         toolCardPickaxe: 'div[id="item-card-561"]', //Eagle Mountain Ut
-        toolCardWelder: 'div[id="item-card-44"]', //Kings County Ny
+        searchResult: '[class="ListingItem-textEllipsis-2J6OR ListingItem-infoTitle-11IQO ListingItem-infoText-3hOq8 col-md-12 col-sm-12 col-xs-12"]',
+        toolCardWelder: 'div[id="item-card-44"]', //Kings County Ny 
 
         //Toys category
         seeAllToys: {
@@ -185,7 +188,7 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         nextVehiclesBtn: 'div:nth-child(13) > div:nth-child(8) > div > div.nextArrow.sc-kPVwWT.bUUAdh',
-        previousVehiclesBtn: 'div:nth-child(13) > div:nth-child(8) > div > div.nextArrow.sc-kPVwWT.bOZYnu'),
+        previousVehiclesBtn: 'div:nth-child(13) > div:nth-child(8) > div > div.nextArrow.sc-kPVwWT.bOZYnu',
         vehiclesCardBike: 'div[id="item-card-105"]', //Provo Ut
         vehiclesCardHorse: 'div[id="item-card-706"]', //Anchorage Ak
 
