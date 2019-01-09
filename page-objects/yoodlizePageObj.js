@@ -30,9 +30,9 @@ var yoodlizeCommands = {
             .assert.elementPresent('@seeAllGear')
             .assert.elementPresent('@nextGearBtn')
             .assert.elementPresent('@previousGearBtn')
-            .assert.elementPresent('@seeAllNavigators')
-            .assert.elementPresent('@nextNavigatorsBtn')
-            .assert.elementPresent('@previousNavigatorsBtn')
+            .assert.elementPresent('@seeAlllocalExperts')
+            .assert.elementPresent('@nextlocalExpertsBtn')
+            .assert.elementPresent('@previouslocalExpertsBtn')
             .assert.elementPresent('@seeAllParty')
             .assert.elementPresent('@nextPartyBtn')
             .assert.elementPresent('@previousPartyBtn')
@@ -50,10 +50,42 @@ var yoodlizeCommands = {
         this
             .setValue('@searchBar', searchInfo)
             .click('@searchBtn')
-            .expect.element('@searchResult').text.to.equal(searchResult).before(5000)
+            .expect.element('@searchResult').text.to.contain(searchResult).before(5000)
+            this.click('@logo')
         return this
     },
 
+    usingSeeAll(categoryLink, categoryNumber, categoryName) {
+        this
+            .click(categoryLink)
+            .assert.urlContains(categoryNumber)
+            .expect.element('@filterTag').text.to.contain(categoryName).before(5000)
+            this.click('@logo')
+            return this
+    },
+    searchFiltersCategory(category, categoryNumber) {
+        this
+        .click('@browse')
+        .expect.element('@filterDropDownBtn').to.be.present.before(5000)
+        this.click('@filterDropDownBtn')
+        .expect.element('@toolsFilter').to.be.present.before(5000)
+        this.click(category)
+        .click('@applyFiltersBtn')
+        .assert.urlContains(categoryNumber)
+        .click('@logo')
+    },
+    searchFiltersPrice(minDollarAmount, maxDollarAmount) {
+        this
+        .click('@browse')
+        .expect.element('@filterDropDownBtn').to.be.present.before(5000)
+        this.click('@filterDropDownBtn')
+        .expect.element('@minPriceFilter').to.be.present.before(5000)
+        this.setValue('@minPriceFilter', minDollarAmount)
+        .setValue('@maxPriceFilter', maxDollarAmount)
+        .click('@applyFiltersBtn')
+        .assert.urlContains(minDollarAmount, maxDollarAmount)
+        .click('@logo')
+    },
 
 }
 
@@ -152,15 +184,15 @@ module.exports = {
         gearCardHammock: 'div[id="item-card-82"]', //Orem Ut
         gearCardCampingSet: 'div[id="item-card-33"]', //Kings County Ny
 
-        //Navigators
-        seeAllNavigators: {
+        //localExperts
+        seeAlllocalExperts: {
             selector: '(//a[@href="/s?category=90"])[1]',
             locateStrategy: 'xpath'
         },
-        nextNavigatorsBtn: 'div:nth-child(9) > div:nth-child(8) > div > div.nextArrow.sc-kPVwWT.bUUAdh',
-        previousNavigatorsBtn: 'div:nth-child(9) > div:nth-child(8) > div > div.nextArrow.sc-kPVwWT.bOZYnu',
-        navigatorsCardSewing: 'div[id="item-card-102"]', //Spanish Fork Ut
-        navigatorsCardOldMan: 'div[id="item-card-187"]', //Elk Grove Ca
+        nextlocalExpertsBtn: 'div:nth-child(9) > div:nth-child(8) > div > div.nextArrow.sc-kPVwWT.bUUAdh',
+        previouslocalExpertsBtn: 'div:nth-child(9) > div:nth-child(8) > div > div.nextArrow.sc-kPVwWT.bOZYnu',
+        localExpertsCardSewing: 'div[id="item-card-102"]', //Spanish Fork Ut
+        localExpertsCardOldMan: 'div[id="item-card-187"]', //Elk Grove Ca
 
         //Party
         seeAllParty: {
@@ -193,12 +225,16 @@ module.exports = {
         vehiclesCardHorse: 'div[id="item-card-706"]', //Anchorage Ak
 
         //Browse page
+        filterTag: '[class="sc-iSDuPN haMjsI"]',
+        filterDropDownBtn: '[class="sc-jqCOkK kiPHoQ sc-gqjmRU eHamYD"]',
         filters: '[class="fal fa-chevron-circle-up fa-lg"]',
         toolsFilter: 'div:nth-child(6) > div.icheckbox_minimal-blue > ins',
-        toysFilter: 'div:nth-child(7) > div.icheckbox_minimal-blue > ins',
-        searchFilter: '[placeholder="Search"]',
+        homeFilter: 'div:nth-child(3) > div.icheckbox_minimal-blue > ins',
+        locatExpFilter: 'div:nth-child(10) > div.icheckbox_minimal-blue > ins',
+        searchFilter: '[placeholder="Search here.."]',
         cityFilter: '[placeholder="Enter your city"]',
         startDateFilter: '[id="startDate"]',
+        dateArrowBtn: 'div.DayPickerNavigation_button.DayPickerNavigation_button_1.DayPickerNavigation_button__default.DayPickerNavigation_button__default_2.DayPickerNavigation_button__horizontal.DayPickerNavigation_button__horizontal_3.DayPickerNavigation_button__horizontalDefault.DayPickerNavigation_button__horizontalDefault_4.DayPickerNavigation_rightButton__horizontalDefault.DayPickerNavigation_rightButton__horizontalDefault_5 > svg',
         endDateFilter: '[id="endDate"]',
         july31Date: 'td.CalendarDay.CalendarDay_1.CalendarDay__defaultCursor.CalendarDay__defaultCursor_2.CalendarDay__default.CalendarDay__default_3.CalendarDay__blocked_minimum_nights.CalendarDay__blocked_minimum_nights_4.CalendarDay__selected_start.CalendarDay__selected_start_5.CalendarDay__selected.CalendarDay__selected_6',
         august01Date: 'div > div:nth-child(3) > div > table > tbody > tr:nth-child(1) > td:nth-child(5)',
@@ -207,6 +243,7 @@ module.exports = {
         maxPriceFilter: '[name="priceMax"]',
         clearFiltersBtn: '[class="sc-esjQYD kDoEhs sc-ifAKCX opXhf"]',
         applyFiltersBtn: '[class="sc-esjQYD bCvtjb sc-ifAKCX kvYMhQ"]',
+        searchResult: '[class="SearchResults-resultsContainer-1wMhD"]',
 
 
 
