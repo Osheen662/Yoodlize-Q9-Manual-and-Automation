@@ -20,7 +20,7 @@ module.exports = {
 
     },
     'searching for product in a diffrent state not using filters': browser =>{
-        bucket.searchBar('Welder','Welder')
+        bucket.searchBar('WELDER','Welder')
         bucket.searchBar('Funny Cat','Funny Cat')
         bucket.searchBar('Mountain Bike','Mountain Bike')
         bucket.searchBar('Disco', 'Disco Ball')
@@ -36,11 +36,11 @@ module.exports = {
     'search using category filters on browse page': browser => {
         bucket.searchFiltersCategory('@toolsFilter', '86')
         bucket.searchFiltersCategory('@homeFilter', '77')
-        bucket.searchFiltersCategory('@locatExpFilter', '90')
+        bucket.searchFiltersCategory('@localExpFilter', '90')
     },
     'search using price filter on browse page': browser => {
         bucket.searchFiltersPrice('5', '10')
         bucket.searchFiltersPrice('50', '10000')
-
     },
+
 }

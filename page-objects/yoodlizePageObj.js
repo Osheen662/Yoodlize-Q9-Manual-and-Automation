@@ -50,7 +50,7 @@ var yoodlizeCommands = {
         this
             .setValue('@searchBar', searchInfo)
             .click('@searchBtn')
-            .expect.element('@searchResult').text.to.contain(searchResult).before(5000)
+            .expect.element('@searchResult').text.to.contain(searchResult).before(7000)
             this.click('@logo')
         return this
     },
@@ -59,32 +59,34 @@ var yoodlizeCommands = {
         this
             .click(categoryLink)
             .assert.urlContains(categoryNumber)
-            .expect.element('@filterTag').text.to.contain(categoryName).before(5000)
+            .expect.element('@filterTag').text.to.contain(categoryName).before(7000)
             this.click('@logo')
             return this
     },
     searchFiltersCategory(category, categoryNumber) {
         this
         .click('@browse')
-        .expect.element('@filterDropDownBtn').to.be.present.before(5000)
+        .expect.element('@filterDropDownBtn').to.be.present.before(7000)
         this.click('@filterDropDownBtn')
-        .expect.element('@toolsFilter').to.be.present.before(5000)
+        .expect.element('@toolsFilter').to.be.present.before(7000)
         this.click(category)
         .click('@applyFiltersBtn')
         .assert.urlContains(categoryNumber)
-        .click('@logo')
+        .click('@filterDropDownBtn')
+        .click('@clearFiltersBtn')
     },
     searchFiltersPrice(minDollarAmount, maxDollarAmount) {
         this
         .click('@browse')
-        .expect.element('@filterDropDownBtn').to.be.present.before(5000)
+        .expect.element('@filterDropDownBtn').to.be.present.before(7000)
         this.click('@filterDropDownBtn')
-        .expect.element('@minPriceFilter').to.be.present.before(5000)
+        .expect.element('@minPriceFilter').to.be.present.before(7000)
         this.setValue('@minPriceFilter', minDollarAmount)
         .setValue('@maxPriceFilter', maxDollarAmount)
         .click('@applyFiltersBtn')
         .assert.urlContains(minDollarAmount, maxDollarAmount)
-        .click('@logo')
+        .click('@filterDropDownBtn')
+        .click('@clearFiltersBtn')
     },
 
 }
@@ -98,7 +100,7 @@ module.exports = {
         logo: '[src="/images/logo/blueRaw.png"]',
         searchBar: '[placeholder="Search for an item"]',
         searchBtn: '[class="sc-esjQYD iIXhUv sc-ifAKCX kvYMhQ"]',
-        browse: '[actionbuttonlarge="true"]',
+        browse: 'div.navbar-collapse.collapse > div > div > ul > li:nth-child(2) > a',
         categorySection: '[class="sc-bwzfXH ldxwrS sc-bdVaJa iHZvIS"]',
 
 
@@ -230,7 +232,7 @@ module.exports = {
         filters: '[class="fal fa-chevron-circle-up fa-lg"]',
         toolsFilter: 'div:nth-child(6) > div.icheckbox_minimal-blue > ins',
         homeFilter: 'div:nth-child(3) > div.icheckbox_minimal-blue > ins',
-        locatExpFilter: 'div:nth-child(10) > div.icheckbox_minimal-blue > ins',
+        localExpFilter: 'div:nth-child(10) > div.icheckbox_minimal-blue > ins',
         searchFilter: '[placeholder="Search here.."]',
         cityFilter: '[placeholder="Enter your city"]',
         startDateFilter: '[id="startDate"]',
