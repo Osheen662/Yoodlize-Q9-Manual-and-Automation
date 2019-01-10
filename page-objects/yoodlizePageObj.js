@@ -1,17 +1,111 @@
 var yoodlizeCommands = {
 
-   }
-  
-  
-  module.exports = {
-      url: 'https://alpha.yoodlize.com/',
-      commands: [yoodlizeCommands],
-      elements: {
-          logo: '[src="/images/logo/blueRaw.png"]',
-          searchBar: '[placeholder="Search for an item"]',
-          searchBtn: '[class="sc-esjQYD iIXhUv sc-ifAKCX kvYMhQ"]',
-          browse: '[actionbuttonlarge="true"]',
-          seeAllTools: {
+    checkHomePg() {
+        this
+            .assert.elementPresent('@logo')
+            .assert.elementPresent('@searchBar')
+            .assert.elementPresent('@searchBtn')
+            .assert.elementPresent('@browse')
+            .assert.elementPresent('@seeAllTools')
+            .assert.elementPresent('@nextToolBtn')
+            .assert.elementPresent('@previousToolBtn')
+            .assert.elementPresent('@seeAllToys')
+            .assert.elementPresent('@nextToysBtn')
+            .assert.elementPresent('@previousToysBtn')
+            .assert.elementPresent('@seeAllSports')
+            .assert.elementPresent('@nextSportsBtn')
+            .assert.elementPresent('@previousSportsBtn')
+            .assert.elementPresent('@seeAllBusiness')
+            .assert.elementPresent('@nextBusinessBtn')
+            .assert.elementPresent('@previousBusinessBtn')
+            .assert.elementPresent('@seeAllElectronics')
+            .assert.elementPresent('@nextElectronicsBtn')
+            .assert.elementPresent('@previousElectronicsBtn')
+            .assert.elementPresent('@seeAllHome')
+            .assert.elementPresent('@nextHomeBtn')
+            .assert.elementPresent('@previousHomeBtn')
+            .assert.elementPresent('@seeAllFashion')
+            .assert.elementPresent('@nextFashionBtn')
+            .assert.elementPresent('@previousFashionBtn')
+            .assert.elementPresent('@seeAllGear')
+            .assert.elementPresent('@nextGearBtn')
+            .assert.elementPresent('@previousGearBtn')
+            .assert.elementPresent('@seeAlllocalExperts')
+            .assert.elementPresent('@nextlocalExpertsBtn')
+            .assert.elementPresent('@previouslocalExpertsBtn')
+            .assert.elementPresent('@seeAllParty')
+            .assert.elementPresent('@nextPartyBtn')
+            .assert.elementPresent('@previousPartyBtn')
+            .assert.elementPresent('@seeAllVenues')
+            .assert.elementPresent('@nextVenuesBtn')
+            .assert.elementPresent('@previousVenuesBtn')
+            .assert.elementPresent('@seeAllVehicles')
+            .assert.elementPresent('@nextVehiclesBtn')
+            .assert.elementPresent('@previousVehiclesBtn')
+            .assert.elementPresent('@categorySection')
+        return this
+    },
+
+    searchBar(searchInfo, searchResult) {
+        this
+            .setValue('@searchBar', searchInfo)
+            .click('@searchBtn')
+            .expect.element('@searchResult').text.to.contain(searchResult).before(7000)
+            this.click('@logo')
+        return this
+    },
+
+    usingSeeAll(categoryLink, categoryNumber, categoryName) {
+        this
+            .click(categoryLink)
+            .assert.urlContains(categoryNumber)
+            .expect.element('@filterTag').text.to.contain(categoryName).before(7000)
+            this.click('@logo')
+            return this
+    },
+    searchFiltersCategory(category, categoryNumber) {
+        this
+        .click('@browse')
+        .expect.element('@filterDropDownBtn').to.be.present.before(7000)
+        this.click('@filterDropDownBtn')
+        .expect.element('@toolsFilter').to.be.present.before(7000)
+        this.click(category)
+        .click('@applyFiltersBtn')
+        .assert.urlContains(categoryNumber)
+        .click('@filterDropDownBtn')
+        .click('@clearFiltersBtn')
+    },
+    searchFiltersPrice(minDollarAmount, maxDollarAmount) {
+        this
+        .click('@browse')
+        .expect.element('@filterDropDownBtn').to.be.present.before(7000)
+        this.click('@filterDropDownBtn')
+        .expect.element('@minPriceFilter').to.be.present.before(7000)
+        this.setValue('@minPriceFilter', minDollarAmount)
+        .setValue('@maxPriceFilter', maxDollarAmount)
+        .click('@applyFiltersBtn')
+        .assert.urlContains(minDollarAmount, maxDollarAmount)
+        .click('@filterDropDownBtn')
+        .click('@clearFiltersBtn')
+    },
+
+}
+
+
+module.exports = {
+    url: 'https://alpha.yoodlize.com/',
+    commands: [yoodlizeCommands],
+    elements: {
+        //Home page
+        logo: '[src="/images/logo/blueRaw.png"]',
+        searchBar: '[placeholder="Search for an item"]',
+        searchBtn: '[class="sc-esjQYD iIXhUv sc-ifAKCX kvYMhQ"]',
+        browse: 'div.navbar-collapse.collapse > div > div > ul > li:nth-child(2) > a',
+        categorySection: '[class="sc-bwzfXH ldxwrS sc-bdVaJa iHZvIS"]',
+
+
+        //Tools category
+        seeAllTools: {
             selector: '(//a[@href="/s?category=86"])[1]',
             locateStrategy: 'xpath'
           },
