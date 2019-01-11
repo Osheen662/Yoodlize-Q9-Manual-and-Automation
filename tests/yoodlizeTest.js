@@ -16,7 +16,7 @@ module.exports = {
         bucket.searchBar('Pickaxe', 'Pickaxe')
         bucket.searchBar('House', 'House')
         bucket.searchBar('martial art', 'Martial Arts')
-        bucket.searchBar('car', 'car')
+
 
     },
     'searching for product in a diffrent state not using filters': browser =>{
