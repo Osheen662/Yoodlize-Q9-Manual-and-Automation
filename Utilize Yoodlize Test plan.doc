@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#UY-2] Utilize Yoodlize Test Plan</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://dmutah.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [UY-2]&nbsp;<a href="https://dmutah.atlassian.net/browse/UY-2">Utilize Yoodlize Test Plan</a>
+            <span class="subText">
+               Created: 03/Jan/19                   &nbsp;Updated: 10/Jan/19
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Open</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://dmutah.atlassian.net/secure/BrowseProject.jspa?id=10197">Utilize Yoodlize</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Test Plan
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                                            <a class="user-hover" rel="brackmud11" id="word_reporter_brackmud11" href="https://dmutah.atlassian.net/secure/ViewProfile.jspa?name=brackmud11">Bracken Mudrow</a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Unassigned
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-20166-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://dmutah.atlassian.net/images/icons/attach/pdf.gif" height="16" width="16" border="0" alt="PDF File">
+                    Project Summary Report (1).pdf &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Relates</b><br/>
+                            </td>
+                        </tr>
+                                    <tr>
+            <td>
+                relates to
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/Q9J-59">
+                     Q9J-59                 </a>
+            </td>
+            <td>
+                Manual test for browsing as a non reg...
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                relates to
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-9">
+                     UY-9                 </a>
+            </td>
+            <td>
+                Yoodlize Rent test suite
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                relates to
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-67">
+                     UY-67                 </a>
+            </td>
+            <td>
+                Renter can reschedule the rental request
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                relates to
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-70">
+                     UY-70                 </a>
+            </td>
+            <td>
+                The renter should be able to access t...
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                relates to
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-71">
+                     UY-71                 </a>
+            </td>
+            <td>
+                No way of accessing the receipts of t...
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                relates to
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-75">
+                     UY-75                 </a>
+            </td>
+            <td>
+                The dates are not visible when a non ...
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                relates to
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-3">
+                     UY-3                 </a>
+            </td>
+            <td>
+                Manual test for browsing Yoodlize
+            </td>
+            <td>
+                Idea
+            </td>
+        </tr>
+                                                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Test</b><br/>
+                            </td>
+                        </tr>
+                                                                <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-31">
+                     UY-31                 </a>
+            </td>
+            <td>
+                Listing Items for Rent
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-5">
+                     UY-5                 </a>
+            </td>
+            <td>
+                Account Management Test Suite
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-14">
+                     UY-14                 </a>
+            </td>
+            <td>
+                Testing the ability of multiple rente...
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-15">
+                     UY-15                 </a>
+            </td>
+            <td>
+                Round 1
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-17">
+                     UY-17                 </a>
+            </td>
+            <td>
+                Can mouse over an item on the home pa...
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-18">
+                     UY-18                 </a>
+            </td>
+            <td>
+                As a Guest Renter/Renter Logged In/Re...
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-19">
+                     UY-19                 </a>
+            </td>
+            <td>
+                As a Guest Renter/Renter Logged In/Re...
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-20">
+                     UY-20                 </a>
+            </td>
+            <td>
+                As a Guest Renter/Renter Logged In/Re...
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-21">
+                     UY-21                 </a>
+            </td>
+            <td>
+                An account holder can request a item ...
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-32">
+                     UY-32                 </a>
+            </td>
+            <td>
+                Listing Item for Rent Suite
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-48">
+                     UY-48                 </a>
+            </td>
+            <td>
+                An account holder can view the items ...
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-49">
+                     UY-49                 </a>
+            </td>
+            <td>
+                A renter can message the owner of the...
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://dmutah.atlassian.net/browse/UY-63">
+                     UY-63                 </a>
+            </td>
+            <td>
+                Invalid inputs for the rental confirm...
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+                                        </table>
+            </td>
+        </tr>
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10008-20166-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-9" href="https://dmutah.atlassian.net/browse/UY-1">
+        Utilize Yoodlize Epic
+    </a>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Scope, Objectives, and Risks:</b></td>
+                <td id="customfield_10061-20166-value" class="value" bgcolor="#ffffff" width="80%">      <p><b>Scope</b></p>
+<ul>
+	<li>We will be testing the alpha release of fully functional rental web application Yoodlize.</li>
+	<li>Will be testing the roles of Guest User and User with an account.</li>
+	<li>Will not be testing Admin/Power User roles.</li>
+	<li>Yoodlize is currently functional only in the USA.</li>
+</ul>
+
+
+<p><b>Objective</b><br/>
+To improve the usability and functionality of the web application Yoodlize. </p>
+
+<p><b>Risks</b><br/>
+<em>Project Risks</em></p>
+<ul>
+	<li>QA team does not have direct communication with design or developer teams.<br/>
+Mitigation: AJ has given us a list of user stories and should be contacting developers to get requirements documentation.<br/>
+Contingency: Learn as we go.</li>
+</ul>
+
+
+<p><em>Product Risk</em></p>
+<ul>
+	<li>We do not know when the next developer update will arrive.<br/>
+Mitigation: Try and get in touch with developers.<br/>
+Contingency: Make sure we are all refreshing the app before we test.</li>
+</ul>
+
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Overall Approach:</b></td>
+                <td id="customfield_10062-20166-value" class="value" bgcolor="#ffffff" width="80%">      <ul>
+	<li>Our testing will be manual and automated.</li>
+	<li>Will take steps to automate after the first round of manual testing.</li>
+	<li>All efforts are reactive as testing is wholly done after development.</li>
+</ul>
+
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Coordination of Test Activities:</b></td>
+                <td id="customfield_10063-20166-value" class="value" bgcolor="#ffffff" width="80%">      <p>Splitting the key components of the web app among the 4 QA specialists.<br/>
+Roshin- Rent<br/>
+Jared- List<br/>
+Jake- Browse<br/>
+Bracken- Account management</p>
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>What, Who, How?:</b></td>
+                <td id="customfield_10064-20166-value" class="value" bgcolor="#ffffff" width="80%">      <p><b><ins>Browse</ins></b> 
+    <span class="jira-issue-macro" data-jira-key="UY-3" >
+                <a href="https://dmutah.atlassian.net/browse/UY-3" class="jira-issue-macro-key issue-link"  title="Manual test for browsing Yoodlize" >
+            <img class="icon" src="https://dmutah.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10489&avatarType=issuetype" />
+            UY-3
+        </a>
+                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-current jira-macro-single-issue-export-pdf">Idea</span>
+            </span>
+ <font color="#59afe1">Jake</font></p>
+
+<p><ins>Logged in or Guest User</ins></p>
+
+<ol>
+	<li>I should be able to browse (search bar at top of screen) from any page on the Yoodlize app.</li>
+	<li>On the home page I can click on an item go to the item page and see a description.</li>
+	<li>I can mouse over an item on the home page and see a description.</li>
+	<li>All text that looks clickable does something.</li>
+	<li>I can use "Browse Categories" on the bottom of the home page.</li>
+	<li>I can search using the map, using "search as I move the map" feature.</li>
+	<li>All the filters work, and I can search by:</li>
+</ol>
+<ul>
+	<li>Category</li>
+	<li>Keyword/Location</li>
+	<li>Availability</li>
+	<li>Ratings</li>
+	<li>Price</li>
+</ul>
+
+
+<p><b><ins>List</ins></b> 
+    <span class="jira-issue-macro" data-jira-key="UY-32" >
+                <a href="https://dmutah.atlassian.net/browse/UY-32" class="jira-issue-macro-key issue-link"  title="Listing Item for Rent Suite" >
+            <img class="icon" src="https://dmutah.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10321&avatarType=issuetype" />
+            UY-32
+        </a>
+                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-complete jira-macro-single-issue-export-pdf">Open</span>
+            </span>
+ <font color="#59afe1">Jared</font></p>
+
+<ul>
+	<li>Owner to verify any account information (email, Facebook, Google &amp; Document)  to List items?</li>
+	<li>Automated requests/tips to verify account information?</li>
+	<li>Editing and republishing listings.</li>
+	<li>Deleting listings</li>
+	<li>Description boundary values.</li>
+	<li>Additional rules boundary values.</li>
+	<li>Upload documents feature for additional rules (for legal contracts or pre-written information)?</li>
+	<li>Listings "Sort" drop-down menu functionality.</li>
+	<li>Image types/sizes boundaries.</li>
+	<li>Title boundary values.</li>
+	<li>Address map accuracy.</li>
+	<li>Address/location viewable by any other way than the map (general city/state/country information or distance from renters current location)?</li>
+	<li>Available dates viewable?</li>
+	<li>Rate input boundary values.</li>
+</ul>
+
+
+
+<p><b><ins>Rent</ins></b> 
+    <span class="jira-issue-macro" data-jira-key="UY-9" >
+                <a href="https://dmutah.atlassian.net/browse/UY-9" class="jira-issue-macro-key issue-link"  title="Yoodlize Rent test suite" >
+            <img class="icon" src="https://dmutah.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10321&avatarType=issuetype" />
+            UY-9
+        </a>
+                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-complete jira-macro-single-issue-export-pdf">Open</span>
+            </span>
+ <font color="#59afe1"> Roshin</font></p>
+
+<p><ins>Homepage:</ins><br/>
+	<em>Guest Renter/Renter Logged In/Renter not Logged In</em></p>
+<ol>
+	<li>Can mouse over an item on the home page and see a description.</li>
+	<li>Can click on an item go to the item page and see a description.</li>
+	<li>Can use "Browse Categories" from the bottom</li>
+</ol>
+
+
+<p><ins>Once an Item is selected:</ins><br/>
+<em>Guest Renter/Renter Logged In/Renter not Logged In</em></p>
+<ol>
+	<li>Can set Pickup, dropoff dates for the rental item.</li>
+</ol>
+
+
+<p><em>Renter Logged In can resume the below steps. Guest Renter/Renter not Logged In will be redirected to Sign up or Login page to go ahead with the following renting activities:</em></p>
+<ol>
+	<li>Can request an item for rental.</li>
+	<li>Can see my items requested for rental in the admin section.</li>
+	<li>Can message an owner.</li>
+	<li>Need to enter payment info when I request renter.</li>
+	<li>Can view the rental receipt and print it.</li>
+	<li>Payment not billed until pickup.</li>
+	<li>Reminded to review the renter/owner after drop-off as appropriate.</li>
+</ol>
+
+
+
+
+<p> <b><ins>Account Management</ins></b> 
+    <span class="jira-issue-macro" data-jira-key="UY-5" >
+                <a href="https://dmutah.atlassian.net/browse/UY-5" class="jira-issue-macro-key issue-link"  title="Account Management Test Suite" >
+            <img class="icon" src="https://dmutah.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10321&avatarType=issuetype" />
+            UY-5
+        </a>
+                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-complete jira-macro-single-issue-export-pdf">Open</span>
+            </span>
+ <font color="#59afe1">Bracken</font>  </p>
+
+<p><ins>Authentication</ins></p>
+<ul class="alternate" type="square">
+	<li>As a user I can login and logout successfully</li>
+	<li>As a user I can successfully create an account</li>
+</ul>
+
+
+<p><ins>Account</ins></p>
+<ul class="alternate" type="square">
+	<li>As a user I can edit my profile</li>
+	<li>I can edit my payout preferences</li>
+	<li>I can change my password under the security tab</li>
+	<li>As a user I can view my transaction history</li>
+	<li>I can use Trust and Verification to edit and add verifications</li>
+	<li>I can edit my Listings</li>
+</ul>
+
+
+<p><ins>Reviews, Reservations, Messages</ins></p>
+<ul class="alternate" type="square">
+	<li>I can review my reviews</li>
+	<li>I can view my Reservations</li>
+	<li>I can view my Inbox and message with other users</li>
+</ul>
+
+
+
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Schedule:</b></td>
+                <td id="customfield_10065-20166-value" class="value" bgcolor="#ffffff" width="80%">      <p>After the plan is approved, tests analysis and test design will occur, followed by implementation.</p>
+
+<p>We will have 1 week until the end of class to test.</p>
+
+<p><b>Entry Criteria</b></p>
+<ul>
+	<li>Dummy Test data will be created to test with</li>
+	<li>Test Environment will be implemented, <a href="https://alpha.yoodlize.com/" class="external-link" rel="nofollow">alpha</a></li>
+</ul>
+
+
+<p>Once the above criteria are met, test execution can begin.</p>
+
+<p><b>Exit Criteria</b></p>
+<ul>
+	<li>All features  will have been tested and reported passed</li>
+	<li>Customers acceptance criteria are met</li>
+</ul>
+
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Monitoring and Control Metrics:</b></td>
+                <td id="customfield_10068-20166-value" class="value" bgcolor="#ffffff" width="80%">      <p>We will be tracking % of features passing testing, utilizing the features identified in "What, Who, How?"</p>
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Budget:</b></td>
+                <td id="customfield_10066-20166-value" class="value" bgcolor="#ffffff" width="80%">      <p>We are working with the developers of Yoodlize for payment... so far nothing.</p>
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Test Documentation Guidelines:</b></td>
+                <td id="customfield_10067-20166-value" class="value" bgcolor="#ffffff" width="80%">      <p>Standard JIRA test cases will be used. <br/>
+Testers will do deep level testing in their own test area.</p>
+
+<p>Here is a doc-link to all the user profiles created for testing purposes:<br/>
+<a href="https://docs.google.com/document/d/1TXBqY1l6DRSZ1zK_tCPo7kz9yrNU94LD0YQxqyb_H8g/edit?usp=sharing" class="external-link" rel="nofollow">https://docs.google.com/document/d/1TXBqY1l6DRSZ1zK_tCPo7kz9yrNU94LD0YQxqyb_H8g/edit?usp=sharing</a></p>
+
+<p>Link all test cases to this test plan.<br/>
+All bugs need to have a test case linked as "Tested By"<br/>
+Create a new test case and update our test plan as necessary if there is not a test case currently covering the bug.</p>
+
+<p>Only update the test plan 1 at a time.</p>
+  </td>
+            </tr>
+            </table>
+
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-11894"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                                        <a class="user-hover" rel="dwretberg801" id="word_commented_dwretberg801" href="https://dmutah.atlassian.net/secure/ViewProfile.jspa?name=dwretberg801">Douglas Wretberg</a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">04/Jan/19</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-11894"><td bgcolor="#ffffff">
+            <p>Credit card info:</p>
+<ul>
+	<li>4242424242424242</li>
+	<li>Use that card number</li>
+	<li>any zip/cvv/current or future date should work.</li>
+</ul>
+
+        </td></tr>
+            </table>
+Generated at Sat Jan 19 00:14:02 UTC 2019 by ROSHIN ABRAHAM using Jira 1001.0.0-SNAPSHOT#100098-sha1:cd2989f4aceceddc0d5999f1a7f560b3e23e9ff9.
+
+</body>
+</html>
